@@ -1,8 +1,11 @@
 <template>
-    <CollectionMain :url="url" entity="RESPONSES" :entityId="1" :projectId="1" :editUrl="editUrl" />
+  <div>
+    <EmailTemplatesMain
+      url="https://v1-orm-lib.mars.hipso.cc/email-templates/"
+      heading="No Emails Templates"
+      sub-heading="Creat your own email templates"
+      add-button="Add Template"
+    />
+  </div>
 </template>
-<script setup lang="ts">
-// Notes json
-const url = 'https://v1-orm-lib.mars.hipso.cc/notes/entity/RESPONSES/1?project_id=1&offset=0&limit=100&sort_column=id&sort_direction=desc'
-const editUrl = 'https://v1-orm-lib.mars.hipso.cc/notes'
-</script>
+<script setup lang="ts"></script>
